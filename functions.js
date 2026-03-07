@@ -57,13 +57,51 @@ function sumTillN(n) {
 }
 console.log(sumTillN(3));
 
-
-function concatinateArray(arr){
-    let result="";
-    for(let i=0;i<arr.length;i++){
-        result+=arr[i];
-    }return result;
+function concatinateArray(arr) {
+  let result = "";
+  for (let i = 0; i < arr.length; i++) {
+    result += arr[i];
+  }
+  return result;
 }
-arr=["hello "," hi "," no"]
-console.log(concatinateArray(arr))
+arr = ["hello ", " hi ", " no"];
+console.log(concatinateArray(arr));
 
+//function exrpession
+//nameless function
+let sum2 = function (a, b) {
+  return a + b;
+};
+console.log(sum(1, 2));
+
+// high order function:take one or multiple function as argument
+function multigreet(func, n) {
+  for (let i = 0; i <= n; i++) {
+    func();
+  }
+}
+let greet = function () {
+  console.log("hello");
+};
+multigreet(greet, 3);
+multigreet(function () {
+  console.log("hi");
+}, 3);
+
+// factory function : highorder fn with return
+function oddeven(req) {
+  if (req == "odd") {
+    return function (n) {
+      console.log(!(n % 2 == 0));
+    };
+  } else if (req == "even") {
+    return function (n) {
+      console.log(n % 2 == 0);
+    };
+  } else {
+    console.log("incorrect request");
+  }
+}
+
+fun=oddeven("even");
+fun(3)
