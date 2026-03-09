@@ -72,3 +72,15 @@ const student = {
 };
 student.getAge();
 student.getNAme();
+
+// Q) Write arrow function to print square of a number
+let square = (n) => n * n;
+console.log(square(2));
+
+// Q) waf to print hello in interval of 5 sec
+let id = setInterval(() => {
+  console.log("hello");
+}, 2000);
+setTimeout(() => {
+  clearInterval(id);
+}, 10000);
