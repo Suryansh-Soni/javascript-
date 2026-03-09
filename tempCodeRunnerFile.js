@@ -1,10 +1,14 @@
-const student = {
-//   name: "suryansh",
-//   age: 21,
-//   getage() {
-//     console.log(this);
-//     let age = this.age;
-//     console.log(`${age} is just a number`);
-//   },
+let arr = [1, 2, 3, 4];
+// let print = function (el) {
+//   console.log(el);
 // };
-// student.getage();
+// arr.forEach(print);
+
+// let Students = [
+//   { name: "suryansh", age: 20 },
+//   { name: "Sumit", age: 20 },
+//   { name: "tejas", age: 20 },
+// ];
+// arr2.forEach((student) => {
+//   console.log(student.age);
+// });
