@@ -1,14 +1,6 @@
-let arr = [1, 2, 3, 4];
-// let print = function (el) {
-//   console.log(el);
-// };
-// arr.forEach(print);
-
-// let Students = [
-//   { name: "suryansh", age: 20 },
-//   { name: "Sumit", age: 20 },
-//   { name: "tejas", age: 20 },
-// ];
-// arr2.forEach((student) => {
-//   console.log(student.age);
-// });
+function sum(...args){
+    for(i of args){
+        console.log(i)
+    }
+}
+sum(1,2,3,4)
