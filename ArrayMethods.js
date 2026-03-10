@@ -14,19 +14,19 @@ arr2.forEach((student) => {
 });
 
 // // Map
-// let num = [1, 2, 3, 4, 5];
-// let double = num.map((el) => {
-//   return el * 2;
-// });
+let num = [1, 2, 3, 4, 5];
+let double = num.map((el) => {
+  return el * 2;
+});
 
-// console.log(double);
+console.log(double);
 
 // filter
-let num = [1, 2, 3, 4, 5];
-let double = num.filter((el) => {
-  return el % 2 == 0;
-});
-console.log(double);
+// let num = [1, 2, 3, 4, 5];
+// let double = num.filter((el) => {
+//   return el % 2 == 0;
+// });
+// console.log(double);
 
 // "every" similer to and operator
 console.log([2, 3, 4].every((el) => el % 2 == 0));
@@ -101,11 +101,20 @@ sum(1, 2, 3, 4);
 // ...args:values are stored ans array
 
 // destructuring
-let name = ["tonny ", "sony", "koni"];
+let name2 = ["tonny ", "sony", "koni"];
 // let winner=name[0]
 // let runnerup=name[1];
 // let secondRunnerup=name[2];
 
-let [winner, runnerup, ...others] = name;
+let [winner, runnerup, ...others] = name2;
 
 console.log(winner);
+
+// destructering on objects
+const student = {
+  name: "Suryansh",
+  Sage: 23,
+};
+let { name, Sage } = student;
+console.log(name);
+let { name: username, age } = student;
