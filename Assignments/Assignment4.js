@@ -19,4 +19,11 @@ let arr2 = num.map((el) => {
 });
 console.log(arr2);
 
+// Taks3:
+let str = ["abcd", "fghi"];
+let struper = str.map((str) => {
+  return str.toUpperCase();
+});
+console.log(struper);
+
 
