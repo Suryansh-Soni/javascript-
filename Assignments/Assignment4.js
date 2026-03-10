@@ -33,3 +33,19 @@ let doubleAndReturnArgs = (arr, ...other) => [
   ...other.map((v) => v * 2),
 ];
 console.log(doubleAndReturnArgs([1, 2, 3], 4, 5, 6));
+
+// Task 5:
+obj1 = {
+  name: "Suryansh",
+  age: 21,
+};
+obj2 = {
+  name: "Teja",
+  age: 21,
+};
+
+const mergeObj = (obj1, obj2) => 
+  ({ ...obj1, ...obj2 });
+
+
+console.log(mergeObj(obj1,obj2))
