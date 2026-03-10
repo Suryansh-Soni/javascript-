@@ -13,13 +13,13 @@ arr2.forEach((student) => {
   console.log(student.age);
 });
 
-// // Map
-let num = [1, 2, 3, 4, 5];
-let double = num.map((el) => {
-  return el * 2;
-});
+//  // Map
+// let num = [1, 2, 3, 4, 5];
+// let double = num.map((el) => {
+//   return el * 2;
+// });
 
-console.log(double);
+// console.log(double);
 
 // filter
 // let num = [1, 2, 3, 4, 5];
