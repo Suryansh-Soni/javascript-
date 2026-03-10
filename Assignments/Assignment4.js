@@ -26,4 +26,10 @@ let struper = str.map((str) => {
 });
 console.log(struper);
 
-
+// Task 4:
+arr = [1, 2, 3, 4];
+let doubleAndReturnArgs = (arr, ...other) => [
+  ...arr,
+  ...other.map((v) => v * 2),
+];
+console.log(doubleAndReturnArgs([1, 2, 3], 4, 5, 6));
