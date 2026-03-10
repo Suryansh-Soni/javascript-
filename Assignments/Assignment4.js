@@ -12,6 +12,11 @@ const sum = (arr) => {
 
 sum(arr);
 
-
+// Task 2:
+num = [1, 2, 3, 4, 5];
+let arr2 = num.map((el) => {
+  return (el += 5);
+});
+console.log(arr2);
 
 
