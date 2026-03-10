@@ -74,33 +74,38 @@ function sum(a = 20, b = 30) {
 }
 console.log(sum());
 
-// iterables :spread : all individaual values of array/string is considere as ind agrument 
-let arr3=[1,2,3,4,5,6]
-let arr4=[148,48,489]
-let copy=[...arr3]
-console.log(copy)
+// iterables :spread : all individaual values of array/string is considere as ind agrument
+let arr3 = [1, 2, 3, 4, 5, 6];
+let arr4 = [148, 48, 489];
+let copy = [...arr3];
+console.log(copy);
 
-console.log([...arr3,...arr4])
+console.log([...arr3, ...arr4]);
 
-// on objects 
-const data={
-    email:"sbh@123",
-    pass:"ygygvuh"
-}
-console.log(datacopy={...data})
+// on objects
+const data = {
+  email: "sbh@123",
+  pass: "ygygvuh",
+};
+console.log((datacopy = { ...data }));
 
 //rest
 
-function sum(...args){
-    for(i of args){
-        console.log(i)
-    }
+function sum(...args) {
+  for (i of args) {
+    console.log(i);
+  }
 }
-sum(1,2,3,4)
+sum(1, 2, 3, 4);
 
+// ...args:values are stored ans array
 
-// ...args:values are stored ans array 
+// destructuring
+let name = ["tonny ", "sony", "koni"];
+// let winner=name[0]
+// let runnerup=name[1];
+// let secondRunnerup=name[2];
 
+let [winner, runnerup, ...others] = name;
 
-
-
+console.log(winner);
