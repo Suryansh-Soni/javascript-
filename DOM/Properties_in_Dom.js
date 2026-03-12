@@ -18,3 +18,8 @@ let link = document.querySelectorAll(".box a");
 for (l of link) link.style.color = "purple";
 // using classList: doc.selecter('p).classList.add('green')
 // functions:.add(),.remove(),.contains(),.toggle()
+
+// Navigation :
+// parentElement,children,previuosElementSibling/nextElementSibling
+let box=document.querySelector('p')
+box.children[1].previousElementSibling;
