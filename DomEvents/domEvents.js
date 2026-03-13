@@ -15,3 +15,5 @@ for (let btn of btns) {
 
   console.dir(btn);
 }
+
+// for these two functions we can only have one value(function that will run).
