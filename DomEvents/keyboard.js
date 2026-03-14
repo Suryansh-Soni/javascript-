@@ -22,17 +22,25 @@ let form = document.querySelector("form");
 // });
 
 // extract the data from the form
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  // let user = document.querySelector("#user");
-  // let pass = document.getElementById("pass");
-  // // console.log(inp.innerText);// innerText donesnt work for user inputs .
-  // console.log(user.value);
-  // console.log(pass.value);
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   // let user = document.querySelector("#user");
+//   // let pass = document.getElementById("pass");
+//   // // console.log(inp.innerText);// innerText donesnt work for user inputs .
+//   // console.log(user.value);
+//   // console.log(pass.value);
 
-  let user = this.elements[0];
-  let pass = this.elements[1];
-  // console.log(inp.innerText);// innerText donesnt work for user inputs .
-  console.log(user.value);
-  console.log(pass.value);
+//   let user = this.elements[0];
+//   let pass = this.elements[1];
+//   // console.log(inp.innerText);// innerText donesnt work for user inputs .
+//   console.log(user.value);
+//   console.log(pass.value);
+// });
+
+ 
+
+user.addEventListener("input", function (e) {
+  e.preventDefault();  //only character key trigger tis event not keys like enter or shift 
+  console.log("input changed");
+  console.log("final value: ", user.value);
 });
