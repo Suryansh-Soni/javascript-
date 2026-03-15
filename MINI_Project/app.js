@@ -50,8 +50,11 @@ function check(idx) {
       setTimeout(levelUp, 1000);
     }
   } else {
-    h2.innerText = "Game Over, press any key to start over.";
-
+    h2.innerHTML = `Game Over,Your Score Was :<b>${level}<b> <br>Press any key to start over.`;
+    document.querySelector("body").style.backgroundColor = "gold";
+    setTimeout(function () {
+      document.querySelector("body").style.backgroundColor = "white";
+    }, 150);
     started = false;
     gameSeq = [];
     userSeq = [];
