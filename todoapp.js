@@ -14,9 +14,20 @@ btn.addEventListener("click", function () {
   ul.append(item);
 
   inp.value = "";
-
-  delbtn.addEventListener("click", function () {
-    let par = this.parentElement;
-    par.remove();
-  });
 });
+
+ul.addEventListener("click", function (e) {
+  if (e.target.nodeName == "BUTTON") {
+    let ListItem = e.target.parentElement;
+    ListItem.remove();
+    console.log("del ");
+  }
+});
+
+// let delbtn = document.createElement(".del");
+// for(delbtns of delbtn ){
+// delbtn.addEventListener("click", function () {
+//   let par = this.parentElement;
+//   par.remove();
+// });
+// }
