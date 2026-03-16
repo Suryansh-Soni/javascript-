@@ -40,7 +40,7 @@ setTimeout(function () {
 // states : pending , rejected , fulfilled
 
 function saveToDb(data) {
-  return new Promise((resolve, reject ) => {
+  return new Promise((resolve, reject) => {
     let internetSpeed = Math.floor(Math.random() * 10) + 1;
     if (internetSpeed > 4) {
       resolve("Success,data saved ");
@@ -51,10 +51,28 @@ function saveToDb(data) {
 }
 
 // promise -> fulfilled->.then,reject->.catch
-let req=saveToDb("hello sir ji kya hal ");
-req.then(()=>{
-  console.log("promise was resolve. ")
-})
-.catch(()=>{
-  console.log("promise was rejected.")
-})
+let req = saveToDb("hello sir ji kya hal ");
+req
+  .then(() => {
+    console.log("promise was resolve. ");
+    return saveToDb("helloworld").then(() => {
+      console.log("data2 saved ");
+    });
+  })
+  .catch(() => {
+    console.log("promise was rejected.");
+  });
+
+// Promises chaining
+let req2 = saveToDb("hello sir ji kya hal ");
+req2
+  .then((r) => {
+    console.log("promise was resolve.", r);
+    return saveToDb("helloworld");
+  })
+  .then(() => {
+    console.log("data2 saved ");
+  })
+  .catch(() => {
+    console.log("promise was rejected.");
+  });
