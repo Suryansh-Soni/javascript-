@@ -49,4 +49,12 @@ function saveToDb(data) {
     }
   });
 }
-// saveToDb()
+
+// promise -> fulfilled->.then,reject->.catch
+let req=saveToDb("hello sir ji kya hal ");
+req.then(()=>{
+  console.log("promise was resolve. ")
+})
+.catch(()=>{
+  console.log("promise was rejected.")
+})
