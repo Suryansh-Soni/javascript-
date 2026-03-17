@@ -12,3 +12,4 @@ let stringres = JSON.stringify(student);
 console.log(stringres);
 
 // Testing Api Requests
+// Ajax: asynchronus javascript and xml
