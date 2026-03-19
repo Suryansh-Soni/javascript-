@@ -18,3 +18,4 @@ async function getFacts() {
   }
 }
 getFacts();
+ 
