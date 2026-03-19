@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(252, 246, 238);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  text-decoration: underline;
+  background-color: rgb(241, 222, 192);
+  border-radius: 5px;
+}
+main {
+  margin: 1rem;
+}
