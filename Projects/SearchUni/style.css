@@ -5,15 +5,20 @@
 body {
   background-color: rgb(252, 246, 238);
 }
+ul {
+  margin-top: 1rem;
+}
 
 header {
   display: flex;
   justify-content: center;
   margin: 1rem;
   text-decoration: underline;
-  background-color: rgb(241, 222, 192);
+  background-color: rgb(235, 185, 106);
   border-radius: 5px;
 }
 main {
-  margin: 1rem;
+  margin-top: 1rem;
+
+  margin-left: 2rem;
 }
